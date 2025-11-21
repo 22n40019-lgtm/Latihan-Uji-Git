@@ -57,7 +57,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 <header>
     <h1>Kopi Kita</h1>
-    <p>Selamat datang di Website Kopi Kita</p>
+    <p>Welcome to Kopi Kita</p>
 </header>
 
 <nav>
@@ -71,7 +71,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     // ========== HALAMAN HOME ==========
     if ($page == 'home') {
         echo "<h2>Home</h2>";
-        echo "<p>Ini adalah halaman utama website kopi tanpa database.</p>";
+        echo "<p>Ini adalah halaman utama website kopi.</p>";
 
     // ========== HALAMAN PRODUK ==========
     } elseif ($page == 'produk') {
@@ -87,7 +87,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 'home';
     // ========== HALAMAN ABOUT ==========
     } elseif ($page == 'about') {
         echo "<h2>Tentang Kami</h2>";
-        echo "<p>Kopi Kita adalah situs sederhana untuk menampilkan produk kopi tanpa database.</p>";
+        echo "<p>Kopi Kita adalah situs sederhana untuk menampilkan produk kopi.</p>";
     
     // ========== HALAMAN 404 ==========
     } else {
