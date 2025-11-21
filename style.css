@@ -1,8 +1,133 @@
+/* ===========================
+   GLOBAL SETTINGS & FONTS
+   =========================== */
 body {
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-h1, h2, h3 {
-    font-family: "Segoe UI", sans-serif;
+/* ===========================
+   HEADER
+   =========================== */
+header {
+    background: #5a3e36; /* warna kopi */
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
     letter-spacing: 1px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+}
+
+/* ===========================
+   NAVBAR
+   =========================== */
+nav {
+    background: #3b2a26;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   GENERAL CONTAINER
+   =========================== */
+.container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ===========================
+   TITLES
+   =========================== */
+h2 {
+    font-size: 26px;
+    border-left: 5px solid #5a3e36;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   PRODUCT LIST / CARD
+   =========================== */
+.produk {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.produk:hover {
+    transform: scale(1.02);
+}
+
+.produk h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #533b32;
+}
+
+.produk p {
+    margin: 0;
+    font-size: 15px;
+    color: #222;
+}
+
+/* ===========================
+   ABOUT PAGE TEXT
+   =========================== */
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+   =========================== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .produk h3 {
+        font-size: 18px;
+    }
 }
